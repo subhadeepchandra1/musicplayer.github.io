@@ -5,8 +5,9 @@
 		{
 			"src" : "team.png",
 			"type" : "image/png",
-			"sizes" : "48*48"
+			"sizes" : "128*128"
 		}
 	],
-	"start_url": "activity1.html?launcher=true"
+	"display" : "standalone",
+	"start_url" : "/activity1.html?launcher=true"
 }
