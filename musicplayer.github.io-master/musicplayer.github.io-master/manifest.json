@@ -1,0 +1,13 @@
+{
+	"short_name" : "Light",
+	"name" : "LightPlayer",
+	"icons" : [
+		{
+			"src" : "team.png",
+			"type" : "image/png",
+			"sizes" : "128*128"
+		}
+	],
+	"display" : "standalone",
+	"start_url" : "activity1.html?launcher=true"
+}
