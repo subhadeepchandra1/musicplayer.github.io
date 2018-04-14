@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset = "utf-8">
+		<title>Light</title>
+		<link rel="manifest" href="manifest.json">
+		<link rel="stylesheet" href="styles/index.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!--<script src="scripts/audio-metadata.min.js"></script>-->
+		
+
+
+	</head>
+
+	<body>
+		<img src="images/hamburger_menu.svg" id="menu_button">
+		<div id="options" class="module">
+			<ul>
+
+                <li><form style="display: inline">
+                <script>if(typeof FileReader === "undefined") document.write('<span class="warning">[Not supported by your browser]</span>')</script>
+                    Use your own local files:<input id="file" type="file"  onchange="load(this)"></form>
+                   
+                </li>
+                
+				<li>option 2</li>
+                <li>option 3</li>
+			</ul> 
+		</div>
+        
+        <div  id="info" class="module">
+            <p id="demo" style="margin-left: 10%;"></p>
+            
+            <dl>
+                <dt>Artist</dt>
+                <dd id="artist"></dd>
+
+                <dt>Title</dt>
+                <dd id="title"></dd>
+
+                <dt>Album</dt>
+                <dd id="album"></dd>
+
+                <dt>Year</dt>
+                <dd id="year"></dd>
+
+                <dt>Comment</dt>
+                <dd id="comment"></dd>
+
+                <dt>Genre</dt>
+                <dd id="genre"></dd>
+
+                <dt>Track</dt>
+                <dd id="track"></dd>
+
+                <dt>Lyrics</dt>
+                <dd id="lyrics"></dd>
+
+                <dt>Cover Art</dt>
+                <dd><img id="art" src=""></dd>
+            </dl>
+        </div>
+        
+       
+    
+        
+		<section id="albums"></section>
+        
+		<div id="now_playing" class="module">
+			now playing <img src="images/play.svg" id="play_button">
+		</div>
+
+		<script src="scripts/menu.js"></script>
+		<script src="scripts/id3-minimized.js"></script>
+        <script src="scripts/index.js"></script>
+        
+        
+              
+    </body>
+
+		
+
+</html>
